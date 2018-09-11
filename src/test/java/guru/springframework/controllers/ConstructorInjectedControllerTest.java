@@ -14,7 +14,7 @@ public class ConstructorInjectedControllerTest {
 
     @Before
     public void setUp() {
-        constructorInjectedController = new ConstructorInjectedController(new GreetingServiceImpl());
+	    constructorInjectedController = new ConstructorInjectedController(new GreetingServiceImpl());
     }
 
     @Test

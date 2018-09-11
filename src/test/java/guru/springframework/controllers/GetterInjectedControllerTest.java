@@ -15,8 +15,8 @@ public class GetterInjectedControllerTest {
 
     @Before
     public void setUp() {
-        getterInjectedController = new GetterInjectedController();
-        getterInjectedController.setGreetingService(new GreetingServiceImpl());
+	    getterInjectedController = new GetterInjectedController();
+	    getterInjectedController.setGreetingService(new GreetingServiceImpl());
     }
 
     @Test
