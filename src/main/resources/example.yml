@@ -1,0 +1,27 @@
+# a comment
+name: Simon
+names: # inline comment
+  - Simon
+  - Max
+  - Maxime
+poundSign: "#"
+
+book:
+  author: Maxime Musterfrau
+  publisher: DTV
+
+booleanTrue: yes # True, true
+booleanFalse: no # False, false, FALSE
+
+stringQuote: "This is it's a quote"
+stringColon: "with a colon: inside"
+stringNewLine: |
+  first line
+  second line
+  and so on with line brekas
+stringIgnoreNewLine: >
+  just a
+  very long
+  string in one
+  line, without
+  line breaks
