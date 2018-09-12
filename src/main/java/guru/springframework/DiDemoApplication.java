@@ -2,6 +2,7 @@ package guru.springframework;
 
 import guru.springframework.controllers.MyController;
 import guru.springframework.examplebeans.FakeDataSource;
+import guru.springframework.examplebeans.FakeJmsBroker;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
@@ -17,9 +18,11 @@ public class DiDemoApplication {
 		final MyController controller = (MyController) ctx.getBean("myController");
 
 		final FakeDataSource dataSource = ctx.getBean(FakeDataSource.class);
+		final FakeJmsBroker jmsBroker = ctx.getBean(FakeJmsBroker.class);
 
 		final Logger logger = LoggerFactory.getLogger(DiDemoApplication.class);
 
 		logger.info("Get the fake data source: " + dataSource);
+		logger.info("Get the fake jms broker: " + jmsBroker);
 	}
 }
