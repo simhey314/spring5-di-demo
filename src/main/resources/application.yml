@@ -2,3 +2,9 @@ jms:
   user: jms user
   password: jms password
   url: jms url
+---
+# application profile de properties
+spring:
+  profiles: de
+jms:
+  user: jms deutscher nutzer
